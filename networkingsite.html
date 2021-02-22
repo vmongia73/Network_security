@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Computer Networking</title>
+<style>
+body{
+	background-image: url(pic.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+
+}
+.city{
+	color: black;
+	font-size: 80px;
+	text-align: center;
+}
+.po{
+	color: black;
+	font-size: 20px;
+	font-weight: bolder;
+}
+ul{
+	display: block;
+	list-style-type: none;
+	padding: 10px;
+	overflow: hidden;
+	background-color:rgb(50,50,50);
+	font-size: 20px;
+}
+.p{font-size: 55px;
+	font-weight: bold;}
+li{
+	float: left;
+}
+li a{
+	display: block;
+	color: white;
+	text-align: left;
+	padding: 15px;
+	
+}
+li a:active{
+	background-color:rgb(90,90,90);
+}
+img{
+	margin-left: 450px;
+	border: 5px solid black;
+}
+</style>
+</head>
+<body>
+	<h1 class="city">Networking And Security</h1>
+<p class="p"> Topics:-</p>
+
+<ul>
+	<li><a href="#c1">IP Address</a></li>
+	<li><a href="#c2">Subnetting</a></li>
+	<li><a href="#c3">Routing</a></li>
+	<li><a href="#c4">Static Routing</a></li>
+	<li><a href="#c5">Dynamic Routing</a></li>
+	<li><a href="#c6">Switch Configuration</a></li>
+	<li><a href="#c7">Access Control List</a></li>
+	<li><a href="#c8">Firewall</a></li>
+	<li><a href="#c9">Network Scanning</a></li>
+	<li><a href="#c10">Honeypot</a></li>
+</ul>
+<h1 style="font-size: 45px;text-align: center;">Introduction</h1>
+<p style="font-size: 25px;text-align: center;font-weight: bolder;"> Network • Group of computers and other devices connected by some type of transmission media <br>• Networks enable users to share devices and data, collectively called a network’s resources </p>
+<p style="font-size: 25px;text-align: center;font-weight: bolder;"> Many types of networks exist, but the most common types of networks are Local-Area Networks (LANs), and Wide-Area Networks (WANs).</p>
+<p style="font-size: 25px;text-align: center;font-weight: bolder;">Networks are usually classified using three properties: Topology, Protocol and Architecture.</p>
+<p style="font-size: 25px;text-align: center;font-weight: bolder;">Topology specifies the geometric arrangement of the network. Common topologies are a bus, ring and star.</p>
+<p style="font-size: 25px;text-align: center;font-weight: bolder;">Protocol specifies a common set of rules and signals the computers on the network use to communicate. Most networks use Ethernet, but some networks may use IBM's Token Ring protocol.</p>
+<p style="font-size: 25px;text-align: center;font-weight: bolder;">Architecture refers to one of the two major types of network architecture: Peer-to-peer or client/server.</p>
+
+<h2 id="c1" style="font-size: 70px;text-align: center;font-weight: bolder;" >IP Address </h2>
+
+<p style="font-size: 25px;text-align: center;font-weight: bolder;">What is IP Address?<br>
+A unique string of characters that identifies each computer using the Internet Protocol to communicate over a network. There are two versions of IP that currently coexist in the global Internet: IP version 4 (IPv4) and IP version 6 (IPv6). IP addresses are made up of binary values and drive the routing of all data over the Internet. IPv4 addresses are 32 bits long, and IPv6 addresses 128 bits long.</p>
+<p style="font-size: 25px;text-align: center;font-weight: bolder;"> IP Address Classes <br>
+In the IPv4 IP address space, there are five classes: A, B, C, D and E. Each class has a specific range of IP addresses (and ultimately dictates the number of devices you can have on your network).
+</p>
+<img src="hlo.jpeg" width="650px" height="400px" >
+<p style="font-size: 25px;text-align: center;font-weight: bolder;">There are two versions <br>1.ipv4 <br>2.ipv6 <br>Difference between ipv4 and ipv6 is shown in picture given below </p>
+<img src="hloo.jpeg " width="650px " height="400px">
+<p style="font-size: 25px;text-align: center;font-weight: bolder;">Subnetting <br>
+An IP address is an address used in order to uniquely identify a device on an IP network. The address is made up of 32 binary bits, which can be divisible into a network portion and host portion with the help of a subnet mask.</p>
+<p style="font-size: 25px;text-align: center;font-weight: bolder;"> Work from home <br> Finding the IP Address of computer. </p>
+<p style="font-size: 25px;text-align:center; font-weight: bolder;">Open command promt. <br>Write ipconfig.</p>
+<img src="hi.png" width="650px" height="400px">
+
+<h2 id="c2" style="font-size: 70px;text-align: center;font-weight: bolder;">Subnetting </h2>
+<p style="font-size: 25px;text-align: center;font-weight: bolder;">Network ID (NID) <br> Broadcast ID (BID) </p>
+<pre>
+<p style="font-size: 22px;text-align: center;font-weight: bolder;">Basics and Use of NID and BID
+NID signifies the collective representation of your network. NID cannot be assigned to any computer. <br>Similar in case with BID i.e.
+Broadcast ID.<br>
+NID → Used to scan and get information of all computers in LAN at once.<br>
+BID → Used to send a single message to all device within your LAN at once.<br><br>
+Class C Subnets
+Class C IP addresses are normally assigned to a very small size network because it can only have 254 hosts in a network.
+<br>
+Purposes of Subnetting
+1.) To minimize cost. 2.) To minimize IP wastage.<br><br>
+There is a Scenario in which we take SALES and HR.
+In Scenario we learn how to find Subnet Mask.
+
+</p>
+
+</pre>
+<img src="hu.jpg" width="650px " height="400px">
+<h2 id="c3" style="font-size: 70px;text-align: center;font-weight: bolder;">IP Address and Routers </h2>
+<p style="font-size: 25px;text-align: center;font-weight: bolder;"> IP Address are of two type <br> 1.Public IP<br>2.Private IP <br> <br>About Public and Private IP <br> <br>
+Public IP → Used outside the LAN , assigned by ISP and we can view it but can’t edit it.<br>
+Private IP → Used within LAN , assigned by user/admin and we can view and edit it easily.<br><br><br>
+NAT (Network Address Translation).<br>
+It is the process of converting Public IP into Private IP and vice-versa. Conversion happens in background. We don’t do this. Router is responsible for this.<br><br><br>
+Is IP Address unique?<br><br>
+If public then YES, It’s Unique everywhere; if private then It’s Unique within LAN only, outside LAN it loses its uniqueness.
+<br><br><br>
+ROUTER:
+
+Is used to find the best path possible.<br><br>
+
+Concepts:<br>
+
+1. Router Ports<br>
+
+2. Router Rules<br>
+
+3. Router Modes<br>
+
+4. Router Basic Configuration <br><br>
+
+TYPES:<br><br> a). Console Port > direct configuration<br> b). Auxiliary Port
+> remotely configuration<br><br> ROUTER RULES:<br><br> Rule 1: All interfaces
+of a router should be in different network or should have different
+NID.<br><br> Rule 2: A serial interface connecting two router should be in
+same network or should have same NID.<br><br> 
+</p> 
+<img src="hk.jpg" width="650px" height="300px">
+<p style="font-size: 25px;text-align: center;font-weight: bolder;">COMMANDS FOR CLI :<br><br>
+Router> ENABLE or EN (User Mode)<br>
+Router# CONF T (Privelege Mode)<br>
+Router(Config)#  INTERFACE GIGABITETHERNET0/0<br>
+Router(Config-if)# IP ADDRESS 192.168.1.1 255.255.255.0<br>
+Router(Config-if)# NO SHUTDOWN <br>
+No shutdown is used to make router live/on.<br></p>
+<h2 id="c4" style="font-size: 70px;text-align: center;font-weight: bolder;">Static Routing</h2>
+<p style="font-size: 25px;text-align: center;font-weight: bolder;">Routing<br>
+It is the process of making two routers communicate with each other.<br>
+Router has memory called as IP Table where it stores IP address.</p>
+<img src="he.jpg" width="650px" height="400px">
+<p style="font-size: 25px;text-align: center;font-weight: bolder;">Q. What kind of IP address?<br>
+A. Known NID and Unknown NID<br>
+TYPES:<br>
+
+Static Routing :<br>
+
+● Filling unknown NID in IP Table<br>
+
+● Used in smaller network (e.g for 10-20 computers)<br></p>
+<img src="hn.png " width="650px" height="400px">
+<p style="font-size: 25px;text-align: center;font-weight: bolder;">DORA is a process used by DHCP (Dynamic Host Configuration Protocol). Basically, DHCP is used for providing an automatic IP address to Hosts which want to connect to a network.<br>
+Dynamic Routing:<br>
+● Filling known NID in IP Table.<br>
+● Used in larger network.<br><br>
+</p>
+<h2 id="c5" style="font-size: 70px;text-align: center;font-weight: bolder;">Dynamic Routing</h2>
+<p style="font-size: 25px;text-align: center;font-weight: bolder;">
+Dynamic routing, also called adaptive routing, is a process where a router can forward data via a different route or given destination based on the current conditions of the communication circuits within a system.<br><br>
+
+DHCP<br><br>
+
+● stands for Dynamic Host Configuration Protocol<br>
+
+● DHCP Enable - you have to enable the option.<br>
+
+● DHCP SCOPE<br>
+
+● LEASE TIME
+<br>
+● DHCP Client Table
+<br>
+● DHCP Reservation<br><br>
+Dynamic Routing<br>
+- Used for known networks / in real time scenario
+</p>
+<img src="hf.jpg" width="650px" height="400px">
+<p style="font-size: 25px;text-align: center;font-weight: bolder;">
+- Types<br>
+1. Distance Vector Protocol (Routing Information Protocol)<br>
+a. HOP Count (Minimum)<br>
+2. Link State Protocol (Open Shortest Path First)<br>
+a. Bandwidth (Maximum)<br>
+3. Advance Distance Vector Protocol (Enhanced Interior Gateway Protocol)<br>
+a. Bandwidth + Delay + Travel Time<br><br>
+All the above routing protocols will identify best path in
+different way.<br>
+- This is based on METRIC( based on what criteria best path is identified).<br>
+- Based on purpose, we use any one of routing protocol.<br><br>
+Difference between static and dynamic routing
+</p>
+
+<img src="hm.jpg" width="650px" height="400px">
+<h2 id="c6" style="font-size: 70px;text-align: center;font-weight: bolder;">Switch Configuration</h2>
+<p style="font-size: 25px;text-align: center;font-weight: bolder;">SWITCH : To connect many PCs into your LAN. <br>
+If am not using router then am building LAN without internet just using switch and PCs.
+<br><br>
+</p>
+<img src="hg.jpg" width="650px " height="400px">
+<p style="font-size: 25px;text-align: center;font-weight: bolder;"> 
+SWITCHING:<br>
+1. Switch Ports<br>
+2. Switch Rules<br>
+3. Switch Modes<br>
+4. Switch Configuration<br><br><br>
+
+Switch Ports:<br>
+Access Port (switch to pc )<br>
+2. Trunk Port (switch to switch)<br><br><br>
+
+Switch Rules: ( * Not compulsion rules, but basic thing for practical work)<br><br><br>
+
+Switch - Router<br>
+a). It’s recommended to connect to 1st port i.e 0/1.<br><br>
+Switch - Switch <br>
+a).Last port to first port<br><br>
+
+Switch Modes: (Similar to router modes)<br>
+User Mode<br>
+2. Privilege Mode<br>
+3. Global Configuration Mode<br>
+** Switch has memory which stores MAC addresses.<br>
+</p>
+<img src="hj.jpg" width="650px" height="400px">
+<p style="font-size: 25px;text-align: center;font-weight: bolder;">Switch Configuration:<br> <br>
+CLI:<br>
+SWITCH>EN<br>
+SWITCH#CONF T<br>
+SWITCH(CONFIG)# INTERFACE FASTETHERNET0/2<br>
+SWITCH(CONFIG)# SWITCHPORT MODE ACCESS<br>
+SWITCH(CONFIG)#EXIT<br><br>
+VLAN : Full form is Virtual LAN. A VLAN is a group of devices on one or more LANs that are configured to communicate as if they were attached to the same wire, when in fact they are located on a number of different LAN segments. Because VLANs are based on logical instead of physical connections, they are extremely flexible.
+<br><br>
+SUBNETTING: grouping<br>
+Disadvantages :<br><br>
+Time consuming -  If the number of PCs gets increased then it will create issues.<br>
+2. Increase of workload.<br><br>
+
+VLAN Configuration Steps:<br>
+1. Create VLAN Number (0-65535)<br>
+2. Create VLAN Name (SALES , HR)<br>
+3. Choose an interface of switch<br>
+4. Configure interface (ACCESS / TRUNK).<br>
+5. Link interface with VLAN.<br><br>
+
+TO DO:<br>
+0/2 and 0/3 - SALES VLAN 10<br>
+0/4 and 0/5 - HR VLAN 20<br><br>
+
+STEP 1:<br>
+SWITCH>EN<br>
+SWITCH#CONF T<br>
+SWITCH(CONFIG)#VLAN 10<br>
+SWITCH(CONFIG-VLAN)#NAME SALES<br>
+SWITCH(CONFIG-VLAN)#EXIT<br><br>
+STEP 2:<br>
+SWITCH(CONFIG)# INTERFACE FASTETHERNET0/2<br><br>
+STEP 3:<br>
+SWITCH(CONFIG-IF)# SWITCHPORT MODE ACCESS<br><br>
+STEP4:<br>
+SWITCH(CONFIG-IF)# SWITCHPORT ACCESS VLAN 10<br><br>
+If you need to add one more interface go to step2.<br>
+** EXIT<br><br>
+If u need to check whether u have added interfaces successfully or not, go with command > show vlan. </p>
+<img src="hb.jpg" width="650px " height="400px">
+<h2 id="c7" style="font-size: 70px;text-align: center;font-weight: bolder;">Access Control List</h2>
+<p style="font-size: 25px;text-align: center;font-weight: bolder;">ACL<br>
+An Access Control List (ACL) is a set of rules that is usually used to filter network traffic. ACLs can be configured on network devices with packet filtering capatibilites, such as routers and firewalls.
+</p>
+<img src="hd.jpg" width="650px " height="400px"><br>
+<p style="font-size: 25px;text-align: center;font-weight: bolder;">• Access Control List<br>
+• Conf done in router<br>
+• Used to control incoming & outgoing traffic<br>
+• How control? Permit or Deny<br>
+
+Wild Custom Mask: →<br>
+192.168.1.0 > 0.0.0.255 > for entire network.<br>
+192.168.1.10 > 0.0.0.0 > for single computer.<br><br>
+Types of ACL : →<br>
+Standard ACL<br>
+• Old, not used now, for smaller networks.<br>
+• number range: 0-99.<br>
+• configured close to destination.<br>
+• Permit/ Deny on basis of Source IP.,br<br><br>
+
+Extended ACL<br>
+• New, used now, for larger networks.<br>
+• number range: 100-199.<br>
+• configured close to source.<br>
+• Permit/ Deny on basis of Source IP, Dest IP, Port No. ,Protocol.<br><br>
+Steps:<br>
+
+ACL CREATION:<br><br>
+EXAMPLE:<br>
+#ACCESS-LIST 110 DENY TCP 192.168.1.10 0.0.0.0 10.0.0.2 0.0.0.0 EQ 80<br>
+#ACCESS-LIST 110 PERMIT ICMP ANY <br><br>
+ACL IMPLEMENTATION:-<br>
+
+#INTERFACE <br>
+
+#IP ACCESS-GROUP  IN/OUT<br><br>
+
+EXAMPLE:<br>
+
+#INTERFACE FASTETHERNET0/0<br>
+
+#IP ACCESS-GROUP 110 IN<br>
+</p>
+<img src="hu.jpg " width="650px " height="400px">
+<p style="font-size: 25px;text-align: center;font-weight: bolder;">NAT<br>
+Network Address Translation (NAT) is the process where a network device, usually a firewall, assigns a public address to a computer (or group of computers) inside a private network. The main use of NAT is to limit the number of public IP addresses an organization or company must use, for both economy and security purposes.
+</p>
+<img src="hr.png" width="650px" height="400px">
+<p style="font-size: 25px;text-align: center;font-weight: bolder;">WORKING:<br>
+NAT allows a single device, such as a router, to act as an agent
+between the Internet (or public network) and a local network (or
+private network), which means that only a single unique IP
+address is required to represent an entire group of computers
+to anything outside their network.<br><br>
+NAT Implementation:-<br><br>
+#IP NAT INSIDE SOURCE STATIC 10.0.0.2 200.1.1.2<br>
+#INTERFACE GIGABITETHERNET0/0/1<br>
+#IP NAT INSIDE<br>
+#EXIT<br><br><br>
+
+#INTERFACE SERIAL0/3/0<br>
+#IP NAT OUTSIDE<br>
+#EXIT<br>
+</p>
+<h2 id="c8" style="font-size: 70px;text-align: center;font-weight: bolder;">Firewall</h2>
+<p style="font-size: 25px;text-align: center;font-weight: bolder;">The ASA in Cisco ASA stands for Adaptive Security Appliance.<br>
+In brief, Cisco ASA is a security device that combines firewall, antivirus, intrusion prevention, and virtual private network (VPN) capabilities. It provides proactive threat defense that stops attacks before they spread through the network.<br><br>
+Beyond being a firewall, the Cisco ASA can do the following and more:<br><br>
+Antivirus<br>
+Antispam<br>
+IDS/IPS engine<br>
+VPN device<br>
+SSL device<br>
+Aontent inspection<br>
+</p>
+<img src="hx.png " width="650px" height="400px">
+<p style="font-size: 25px;text-align: center;font-weight: bolder;">CONFIGURATION OF FIREWALL :<br><br>
+
+STEP 1: REMOVE DEFAULT IP ADDRESS AND DHCP SCOPE RANGE<br>
+ciscoasa(config)# interface vlan 1<br>
+ciscoasa(config-if)# np ip address<br>
+ciscoasa(config-if)# exit<br>
+ciscoasa(config)# np dhcpd address 192.168.1.5 - 192.168.1.15 inside<br>
+(We can find this using SHOW command)<br><br>
+
+STEP 2:  ASSIGN IP, NAME AND SECURITY LEVEL TO VLAN 1&2<br><br>
+ciscoasa(config)# interface vlan 1<br>
+ciscoasa(config-if)# ip address 172.16.1.1 255.255.255.0<br>
+ciscoasa(config-if)# no shutdown<br>
+ciscoasa(config-if)# nameif inside<br>
+ciscoasa(config-if)# security-level 100<br>
+ciscoasa(config-if)# exit<br><br>
+
+ciscoasa(config)# interface vlan 2<br>
+ciscoasa(config-if)# ip address 210.2.2.2 255.255.255.0<br>
+ciscoasa(config-if)# no shutdown<br>
+ciscoasa(config-if)# nameif outside<br>
+ciscoasa(config-if)# security-level 0<br>
+ciscoasa(config-if)# exit<br><br>
+STEP 3: LINK CORRESPONDING VLAN 1&2 WITH RESPECTIVE INTERFACE <br><br>
+ciscoasa(config)# interface ethernet0/1<br>
+ciscoasa(config-if)# switchport access vlan 1<br>
+ciscoasa(config-if)# exit<br>
+ciscoasa(config)# interface ethernet0/0<br>
+ciscoasa(config-if)# switchport access vlan 2<br>
+ciscoasa(config-if)# exit<br><br>
+
+STEP 4: CONFIGURE DHCP & DNS SERVER<br><br>
+
+(We can give DHCP range as much as we want, here we give 6 ip’s starting from 1.5 to 1.10)<br>
+
+ciscoasa(config)# dchpd address 172.16.1.5 - 172.16.10 inside<br>
+
+NOTE: Above command allows all computer from inside network to communicate with DNS server.<br><br>
+STEP 5: CONFIGURE DEFAULT ROUTE<br><br>
+
+(The command will let the firewall communicate with the outside network.)<br>
+NOTE: 0.0.0.0 means any source IP can communicate with any destination IP through router IP 210.2.2.1<br><br>
+
+cisocasa(config)# route outside 0.0.0.0 0.0.0.0 210.2.2.1
+<br><br>
+STEP 6: OBJECT NETWORK CREATION & ENABLING NAT<br><br>
+(This will allow INSIDE network to communicate with OUTSIDE network (& vice-versa) with public IP address.<br>
+
+ciscoasa(config)# object network LAN<br>
+ciscoasa(config-network-object)# subnet 172.16.1.0 255.255.255.0<br>
+ciscoasa(config-network-object)# nat (inside,outside) dynamic interface<br>
+<br>
+STEP 7: CREATE ACL<br><br>
+NOTE: Here we are using EXTENDED NAMED ACL( i.e 3rd type of ACL apart from previous two where we use alphabets instead of numbers)<br>
+This ACL allows both TCP and ICMP traffic to be allowed outside the network.<br>
+
+cisco(config)# access-list inside_to_internet extended permit tcp any any<br>
+cisco(config)# access-list inside_to_internet extended permit icmp any any<br>
+cisco(config)#access-group inside_to_internet in interface outside<br>
+<br>
+STEP 8: CONFIGURE ROUTER<br><br>
+ASSIGN IP ADDRESS TO ROUTER<br>
+Configure OSPF for ISP Router<br>
+
+router(config)# router ospf 1<br>
+router(config)# network 210.2.2.0 0.0.0.255 area 0<br>
+router(config)# network 210.2.20.20 0.0.0.255 area 0<br>
+router(config)# exit<br>
+<br>
+STEP 9: Go to PC > DHCP<br></p>
+<h2 id="c9" style="font-size: 70px;text-align: center;font-weight: bolder;">Network Scanning</h2>
+<p style="font-size: 25px;text-align: center;font-weight: bolder;">Network scanning refers to the use of a computer network to gather information regarding computing systems. Network scanning is mainly used for security assessment, system maintenance, and also for performing attacks by hackers.<br><br>
+Tools that we can used for network scanning are : →<br><br>
+Fing App to identify connected devices, troubleshoot network and device issues,scan network , detect network intruders and run Wi-Fi and internet speed tests anywhere.
+<br><br>
+NMAP (Network Mapper) is a free and open source (license) utility for network discovery and security auditing. Many systems and network administrators also find it useful for tasks such as network inventory, managing service upgrade schedules, and monitoring host or service up time. NMAP uses raw IP packets in novel ways to determine what hosts are available on the network, what services (application name and version) those hosts are offering, what operating systems (and OS versions) they are running, what type of packet filters/firewalls are in use, and dozens of other characteristics. It was designed to rapidly scan large networks, but works fine against single hosts. NMAP runs on all major computer operating systems, and official binary packages are available for Linux, Windows, and Mac OS X.
+<br><br>
+</p>
+<img src="hv.png " width="650px" height="400px">
+
+<p style="font-size: 25px;text-align: center;font-weight: bolder;">
+The purpose of network scanning is to manage, maintain, and secure the system using data found by the scanner. Network scanning is used to recognize available network services, discover and recognize any filtering systems in place, look at what operating systems are in use, and to protect the network from attacks.</p>
+<h2 id="c10" style="font-size: 70px;text-align: center;font-weight: bolder;">Honeypot</h2>
+<p style="font-size: 25px;text-align: center;font-weight: bolder;">What is a honeypot?<br>
+A honeypot is a computer or computer system intended to mimic likely targets of cyber attacks. It can be used to detect attacks or deflect them from a legitimate target. It can also be used to gain information about how cyber criminals operate.<br><br>
+You may not have heard of them before, but honeypots have been around for decades. The principle behind them is simple: Don’t go looking for attackers. Prepare something that would attract their interest — the honeypot — and then wait for the attackers to show up.<br><br>
+Like mice to cheese-baited mousetraps, cyber criminals are attracted to honeypots — not because they’re honeypots. The bad guys think the honeypot is a legitimate target, something worthy of their time. That’s because the bait includes applications and data that simulate a real computer system.<br><br>
+How do honeypots work?<br>
+If you, for instance, were in charge of IT security for a bank, you might set up a honeypot system that, to outsiders, looks like the bank’s network. The same goes for those in charge of — or researching — other types of secure, internet-connected systems.<br><br>
+By monitoring traffic to such systems, you can better understand where cyber criminals are coming from, how they operate, and what they want. More importantly, you can determine which security measures you have in place are working — and which ones may need improvement.<br><br>
+Honeypot example<br>
+In 2015, internet security experts set up an online railway control system as honeypot bait. The goal was to study how criminals would attack projects where they could put the public at risk. In this case, the only damage done was to a model train set at a German technology conference. Over two weeks, the so-called “HoneyTrain” suffered 2.7 million attacks.<br><br>
+What is Splunk?<br>
+Splunk is a software platform widely used for monitoring, searching, analyzing and visualizing the machine-generated data in real time. It performs capturing, indexing, and correlating the real time data in a searchable container and produces graphs, alerts, dashboards and visualizations.<br><br>
+IDS and IPS : →<br>
+Intrusion Detection Systems (IDS): analyze and monitor network traffic for signs that indicate attackers are using a known cyberthreat to infiltrate or steal data from your network. IDS systems compare the current network activity to a known threat database to detect several kinds of behaviors like security policy violations, malware, and port scanners.<br><br>
+Intrusion Prevention Systems (IPS): live in the same area of the network as a firewall, between the outside world and the internal network. IPS proactively deny network traffic based on a security profile if that packet represents a known security threat.<br><br>
+The main difference between them is that IDS is a monitoring system, while IPS is a control system. IDS doesn’t alter the network packets in any way, whereas IPS prevents the packet from delivery based on the contents of the packet, much like how a firewall prevents traffic by IP address.<br><br>
+The Differences Between IDS and IPS<br></p>
+<img src="hy.png" width="650px" height="400px">
+<p style="font-size: 25px;text-align: center;font-weight: bolder;">
+	Both IDS/IPS read network packets and compare the contents to a database of known threats. The primary difference between them is what happens next. IDS are detection and monitoring tools that don’t take action on their own. IPS is a control system that accepts or rejects a packet based on the ruleset.<br><br>
+IDS requires a human or another system to look at the results and determine what actions to take next, which could be a full time job depending on the amount of network traffic generated each day. IDS makes a better post-mortem forensics tool for the CSIRT to use as part of their security incident investigations.<br><br>
+The purpose of the IPS, on the other hand, is to catch dangerous packets and drop them before they reach their target. It’s more passive than an IDS, simply requiring that the database gets regularly updated with new threat data.<br><br>
+</p>
+<h2 style="font-size: 70px;text-align: center;font-weight: bolder;">THANK YOU <br>Made by Vipul Mongia</h2>
+</body>
+</html>
